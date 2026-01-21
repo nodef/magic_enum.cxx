@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Fetch the latest version of the library
 fetch() {
-if [ -d "taskflow" ]; then return; fi
-URL="https://github.com/taskflow/taskflow/archive/refs/heads/master.zip"
+if [ -d "magic_enum" ]; then return; fi
+URL="https://github.com/Neargye/magic_enum/archive/refs/heads/master.zip"
 ZIP="${URL##*/}"
-DIR="taskflow-master"
+DIR="magic_enum-master"
 mkdir -p .build
 cd .build
 
@@ -27,10 +27,10 @@ fi
 cd ..
 
 # Copy the libs to the package directory
-echo "Copying libs to taskflow/ ..."
-rm -rf taskflow
-mkdir -p taskflow
-cp -rf ".build/$DIR/taskflow/"* taskflow/
+echo "Copying libs to magic_enum/ ..."
+rm -rf magic_enum
+mkdir -p magic_enum
+cp -rf ".build/$DIR/include/magic_enum/"* magic_enum/
 echo ""
 }
 

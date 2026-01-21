@@ -1,28 +1,28 @@
 {
-  "name": "taskflow.cxx",
-  "version": "4.2026.5",
-  "description": "A General-purpose Task-parallel Programming System using Modern C++; Tsung-Wei Huang (2018).",
+  "name": "magic_enum.cxx",
+  "version": "0.9.7",
+  "description": "Static reflection for enums (to string, from string, iteration) for modern C++, work with any enum type without any macro or boilerplate code; Daniil Goncharov (2019).",
   "keywords": [
     "c++",
     "library",
-    "taskflow",
-    "parallel",
-    "concurrency",
-    "multithreading",
-    "task graph",
-    "thread pool"
+    "header-only",
+    "enum",
+    "reflection",
+    "to_string",
+    "from_string",
+    "iteration"
   ],
-  "homepage": "https://github.com/nodef/taskflow.cxx#readme",
+  "homepage": "https://github.com/nodef/magic_enum.cxx#readme",
   "bugs": {
-    "url": "https://github.com/nodef/taskflow.cxx/issues"
+    "url": "https://github.com/nodef/magic_enum.cxx/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodef/taskflow.cxx.git"
+    "url": "git+https://github.com/nodef/magic_enum.cxx.git"
   },
   "license": "MIT",
   "author": "wolfram77@gmail.com",
-  "main": "taskflow.hpp",
+  "main": "magic_enum.hpp",
   "scripts": {
     "test": "bash build.sh test"
   }

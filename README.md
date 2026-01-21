@@ -16,11 +16,11 @@ If you like this project, please consider donating to one of the funds that help
 
 ## Documentation
 
-* [Reference](doc/reference.md)
-* [Limitations](doc/limitations.md)
-* [Integration](#Integration)
+* [Reference](https://github.com/Neargye/magic_enum/blob/master/doc/reference.md)
+* [Limitations](https://github.com/Neargye/magic_enum/blob/master/doc/limitations.md)
+* [Installation](#Installation)
 
-## [Features & Examples](example/)
+## [Features & Examples](https://github.com/Neargye/magic_enum/blob/master/example/)
 
 * Basic
 
@@ -248,7 +248,7 @@ If you like this project, please consider donating to one of the funds that help
   ```
 
 * Static storage enum variable to string
-  This version is much lighter on the compile times and is not restricted to the enum_range [limitation](doc/limitations.md).
+  This version is much lighter on the compile times and is not restricted to the enum_range [limitation](https://github.com/Neargye/magic_enum/blob/master/doc/limitations.md).
 
   ```cpp
   constexpr Color color = Color::BLUE;
@@ -302,11 +302,42 @@ If you like this project, please consider donating to one of the funds that help
 
 * `magic_enum` does not pretend to be a silver bullet for reflection for enums, it was originally designed for small enum.
 
-* Before use, read the [limitations](doc/limitations.md) of functionality.
+* Before use, read the [limitations](https://github.com/Neargye/magic_enum/blob/master/doc/limitations.md) of functionality.
 
-## Integration
+## Installation
 
-* You should add the required file [magic_enum.hpp](include/magic_enum/magic_enum.hpp), and optionally other headers from [include dir](include/) or [release archive](https://github.com/Neargye/magic_enum/releases/latest). Alternatively, you can build the library with CMake.
+Run:
+
+```bash
+$ npm i magic_enum.cxx
+```
+
+And then include `magic_enum.hpp` as follows:
+
+```cxx
+// main.cxx
+#include <magic_enum.hpp>  // or, magic_enum/magic_enum_all.hpp
+
+int main() { /* ... */ }
+```
+
+Finally, compile while adding the path `node_modules/magic_enum.cxx` to your compiler's include paths.
+
+```bash
+$ clang++ -std=c++17 -I./node_modules/magic_enum.cxx main.cxx  # or, use g++
+$ g++     -std=c++17 -I./node_modules/magic_enum.cxx main.cxx
+```
+
+You may also use a simpler approach with the [cpoach](https://www.npmjs.com/package/cpoach.sh) tool, which automatically adds the necessary include paths of all the installed dependencies for your project.
+
+```bash
+$ cpoach clang++ -std=c++17 main.cxx  # or, use g++
+$ cpoach g++     -std=c++17 main.cxx
+```
+
+---
+
+* Alternatively, you should add the required file [magic_enum.hpp](https://github.com/Neargye/magic_enum/blob/master/include/magic_enum/magic_enum.hpp), and optionally other headers from [include dir](https://github.com/Neargye/magic_enum/blob/master/include/) or [release archive](https://github.com/Neargye/magic_enum/releases/latest). Alternatively, you can build the library with CMake.
 
 * If you are using [vcpkg](https://github.com/Microsoft/vcpkg/) on your project for external dependencies, then you can use the [magic-enum package](https://github.com/microsoft/vcpkg/tree/master/ports/magic-enum).
 
@@ -360,3 +391,12 @@ If you like this project, please consider donating to one of the funds that help
 * MinGW >= 9
 
 ## Licensed under the [MIT License](LICENSE)
+
+<br>
+<br>
+
+
+[![](https://raw.githubusercontent.com/qb40/designs/gh-pages/0/image/11.png)](https://wolfram77.github.io)<br>
+[![SRC](https://img.shields.io/badge/src-repo-green?logo=Org)](https://github.com/Neargye/magic_enum)
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/magic_enum.cxx)
